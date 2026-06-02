@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KioscoSys</title>
+
+    <link
+        rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+<body>
+
+<nav class="sidebar">
+
+    <h2>KioscoSys</h2>
+
+    <a href="index.html">
+        Inicio
+    </a>
+
+    <a href="productos.html">
+        Productos
+    </a>
+
+    <a href="ventas.html">
+        Ventas
+    </a>
+
+    <a href="historial.html">
+        Historial
+    </a>
+
+</nav>
+
+<main class="contenido-principal">
+
+    <h1 class="titulo">
+        Dashboard
+    </h1>
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h3>
+                Productos
+            </h3>
+
+            <p id="cantProductos">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Ventas
+            </h3>
+
+            <p id="cantVentas">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Ingresos
+            </h3>
+
+            <p id="ingresos">
+                $0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Stock Bajo
+            </h3>
+
+            <p id="stockBajo">
+                0
+            </p>
+
+        </div>
+
+    </div>
+
+    <section class="ventas-recientes">
+
+        <h2>
+            Últimas Ventas
+        </h2>
+
+        <ul
+            id="ultimasVentas"
+            class="lista-ventas">
+
+        </ul>
+
+    </section>
+
+</main>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

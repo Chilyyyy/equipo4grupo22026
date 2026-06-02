@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Productos - KioscoSys</title>
+
+    <link
+        rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+<body>
+
+<nav class="sidebar">
+
+    <h2>KioscoSys</h2>
+
+    <a href="index.html">Inicio</a>
+
+    <a href="productos.html">Productos</a>
+
+    <a href="ventas.html">Ventas</a>
+
+    <a href="historial.html">Historial</a>
+
+</nav>
+
+<main class="contenido-principal">
+
+    <h1 class="titulo">
+        Gestión de Productos
+    </h1>
+
+    <div class="card">
+
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre del producto">
+
+            <input
+                type="number"
+                id="precio"
+                placeholder="Precio">
+
+            <input
+                type="number"
+                id="stock"
+                placeholder="Stock">
+
+            <button onclick="agregarProducto()">
+                Agregar
+            </button>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Producto</th>
+
+                <th>Precio</th>
+
+                <th>Stock</th>
+
+                <th>Acciones</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tablaProductos">
+
+        </tbody>
+
+    </table>
+
+</main>
+
+<script src="js/productos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Ventas - KioscoSys</title>
+
+    <link
+        rel="stylesheet"
+        href="css/estilos.css">
+
+</head>
+
+<body>
+
+<nav class="sidebar">
+
+    <h2>KioscoSys</h2>
+
+    <a href="index.html">
+        Inicio
+    </a>
+
+    <a href="productos.html">
+        Productos
+    </a>
+
+    <a href="ventas.html">
+        Ventas
+    </a>
+
+    <a href="historial.html">
+        Historial
+    </a>
+
+</nav>
+
+<main class="contenido-principal">
+
+    <h1 class="titulo">
+        Nueva Venta
+    </h1>
+
+    <div class="card">
+
+        <div class="formulario">
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Buscar producto...">
+
+            <input
+                type="number"
+                id="cantidad"
+                placeholder="Cantidad">
+
+            <button
+                onclick="agregarAlCarrito()">
+
+                Agregar al carrito
+
+            </button>
+
+        </div>
+
+        <div
+            id="infoProducto">
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <h2>
+            Carrito
+        </h2>
+
+        <br>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Producto
+                    </th>
+
+                    <th>
+                        Cantidad
+                    </th>
+
+                    <th>
+                        Precio
+                    </th>
+
+                    <th>
+                        Subtotal
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaCarrito">
+
+            </tbody>
+
+        </table>
+
+        <br>
+
+        <h2
+            id="totalGeneral">
+
+            Total: $0
+
+        </h2>
+
+        <br>
+
+        <button
+            onclick="finalizarVenta()">
+
+            Finalizar Venta
+
+        </button>
+
+    </div>
+
+</main>
+
+<script src="js/ventas.js"></script>
+
+</body>
+</html>
